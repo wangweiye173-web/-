@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VerdantQuasar - Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">VerdantQuasar</a>
+        <nav class="nav">
+            <a href="products.html">Shop</a>
+            <a class="cart-link" href="cart.html" aria-label="Shopping Cart">
+                <span class="cart-icon">🛒</span>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container" aria-label="Shopping Cart">
+        <h1>Your Cart</h1>
+        <div class="cart-actions" style="margin-top: 0; margin-bottom: 12px;">
+            <a class="btn secondary" href="products.html">Continue Shopping</a>
+        </div>
+        <div id="cart-summary" class="cart-summary">
+            <div><strong>Total items:</strong> <span id="total-items">0</span></div>
+            <div><strong>Total cost:</strong> $<span id="total-cost">0.00</span></div>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+
+        <div class="cart-actions">
+            <a class="btn secondary" href="products.html">Continue Shopping</a>
+            <button id="checkout-btn" class="btn primary">Checkout</button>
+        </div>
+    </main>
+
+    <script src="js/store.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
+
